@@ -19,8 +19,7 @@ public class DataSetUtils {
 
 	public static Integer[][] generateMatrixFromList(List<String> dataList, int numberOfRow, int numberOfColumn) {
 		Integer[][] matrix = new Integer[numberOfRow][numberOfColumn];
-		int i = 0;
-		int j = 0;
+		int i = 0,j = 0;
 		for (String row : dataList) {
 			for (String col : row.split(StringUtils.SPACE)) {
 					matrix[i][j] = new Integer(col);
